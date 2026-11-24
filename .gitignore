@@ -1,0 +1,44 @@
+# Build outputs and generated signing material
+/build/
+/dist/
+**/__pycache__/
+*.py[cod]
+.gradle/
+.idea/
+.vscode/
+.DS_Store
+
+# Local configuration / credentials
+.env
+.env.*
+local.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Runtime data / proprietary inputs / binaries
+*.pcap
+*.pcapng
+*.jsonl
+*.log
+*.apk
+*.apks
+*.aab
+*.dex
+*.so
+*.o
+*.class
+*.jar
+*.dll
+*.bin
+*.zip
+*.tar.gz
+**/current.txt
+**/diagnostics.json
+**/hs_err_pid*
+/logs/
+/runtime/
+/release-assets/

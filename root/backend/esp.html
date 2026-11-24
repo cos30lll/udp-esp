@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a1018">
+<title>超自然 · UDP 屏幕投影候选</title>
+<link rel="stylesheet" href="/esp.css?v=espcontext1">
+<script defer src="/projection.js?v=espcontext1"></script>
+<script defer src="/esp.js?v=espcontext1"></script>
+</head>
+<body>
+<header><div><h1>UDP 屏幕投影 <span>候选 1</span></h1><p>不是俯视图 · 实时游戏输入仅来自现有 UDP 状态接口</p></div><nav><a href="/">返回雷达</a><button id="espFull">页面全屏</button><button id="espPause" aria-pressed="false">冻结预览</button><button id="espCopy">复制投影诊断</button></nav></header>
+<p class="warning"><strong>当前是投影预览，不是已完成的 Android 游戏悬浮窗。</strong>自动相机重建尚未完成。手动模式使用你提供的固定镜头参数进行近似投影，不能覆盖镜头碰撞、变焦、角色动作和游戏本地插值；不代表实时 FOV 已取得。无必要参数时不会绘制实体。</p>
+<main>
+<section class="controls">
+<h2>相机来源</h2>
+<label>模式<select id="espMode"><option value="automatic">自动 · 当前未完成，不绘制</option><option value="manual">手动标定 · 近似屏幕投影</option></select></label>
+<label>UDP 分流<select id="espStream"><option value="">仅一个有效分流时自动选择</option></select></label>
+<form id="espProfile" autocomplete="off">
+<h2>手动标定参数</h2>
+<p>全部必填，无默认 FOV、眼高或距离。0 也需明确填写。尺寸必须是游戏有效视口，不是本网页或设备物理面板尺寸。</p>
+<div class="form-grid">
+<label>视口宽 · px<input id="espWidth" name="viewport_width" type="number" min="64" max="16384" step="1" required></label>
+<label>视口高 · px<input id="espHeight" name="viewport_height" type="number" min="64" max="16384" step="1" required></label>
+<label>垂直 FOV · °<input id="espVFov" name="vertical_fov_deg" type="number" min="1" max="179" step="any" required></label>
+<label>目标点高度偏移<input id="espEye" name="eye_height" type="number" min="-100" max="100" step="any" required></label>
+<label>镜头后退距离<input id="espBoom" name="boom_distance" type="number" min="0" max="100" step="any" required></label>
+<label>镜头右侧偏移<input id="espShoulder" name="shoulder_offset" type="number" min="-100" max="100" step="any" required></label>
+<label>实体标记高度偏移<input id="espMarker" name="marker_height" type="number" min="-100" max="100" step="any" required></label>
+<label>镜头 Roll · °<input id="espRoll" name="roll_deg" type="number" min="-180" max="180" step="any" required></label>
+</div>
+<p>偏移/距离使用协议世界坐标单位，不默认等于米。固定镜头模型：角色位置 + 世界竖直偏移 + 镜头右方向偏移 − 镜头前方向 × 后退距离。参数改变后必须重新应用。</p>
+<label class="ack"><input id="espAck" type="checkbox">我知道这是固定手动参数近似，不是自动还原或实时 FOV 测量。</label>
+<div class="buttons"><button id="espApply" type="submit">应用标定</button><button id="espClear" type="button">清除标定</button></div>
+</form>
+<p id="espProfileState" role="status">未应用参数</p>
+<p>仅使用同一 UDP 分流中协议确认的自己。实体和视角最多保留 1 秒，时间差超过 0.35 秒不投影。不以手选雷达参考替代自身身份。</p>
+</section>
+<section class="preview">
+<div class="preview-head"><h2>屏幕坐标预览</h2><span id="espState" role="status">等待接口</span></div>
+<p id="espHint">尚未绘制</p>
+<div class="viewport"><canvas id="espCanvas" width="960" height="540" aria-label="透视投影预览；初始尺寸只用于空画布，不是游戏视口参数"></canvas></div>
+<p id="espMetrics">未收到状态</p>
+<p class="scope">只画实体根位置加标定高度的标记、姓名和世界单位距离，不画伪造骨骼、碰撞框或敌我标记。画布按所填视口等比例显示；本页不读取游戏画面。</p>
+<details><summary>阻塞 / 剔除原因</summary><pre id="espDetails">等待数据</pre></details>
+<details id="espReportBox"><summary>诊断文本（自动复制失败时可手动复制）</summary><textarea id="espReport" readonly rows="12" aria-label="投影诊断文本"></textarea></details>
+</section>
+</main>
+<footer>本页只请求 /api/state，不开启捕获、发送游戏消息或读取进程。关闭网页不会停止后台。</footer>
+</body>
+</html>

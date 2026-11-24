@@ -1,0 +1,960 @@
+{
+  "scope": "all source files except this manifest",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 341,
+      "sha256": "cef76ac4ea4b0584b9f306cb805f601942f7ce065b0c917a917d54627061ee69"
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "size": 1286,
+      "sha256": "bbb2c1f5f4aa766791d047974c045284a67dfdc8544cc01fa2eaecc57c273f70"
+    },
+    {
+      "path": ".gitignore",
+      "size": 467,
+      "sha256": "2af1403b592c8aa92b163e6bae6cc54cec2fe1dd3462c24550209aba2afd9e15"
+    },
+    {
+      "path": "AGENTS.md",
+      "size": 2476,
+      "sha256": "77639dc92accf5a9ca7da451538584ebebce5b9cdcb05fd199299b187c73144d"
+    },
+    {
+      "path": "docs/BUILD.md",
+      "size": 6557,
+      "sha256": "dacaf22edbeaacd5597552be96f946e580b4ac42766ed3214c4d12582a2f94b7"
+    },
+    {
+      "path": "docs/DEVELOPMENT.md",
+      "size": 17710,
+      "sha256": "11a6bf7a0841974217b72d24294a5db1f59d2ba13e3282e622c3facc30a6b265"
+    },
+    {
+      "path": "docs/PROTOCOL.md",
+      "size": 7314,
+      "sha256": "72bf2ccbca6f32976fa64b4fb5291949a68b5565d043682a132fce8917e686b8"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "size": 3286,
+      "sha256": "fc58d09f33d52c0448cabbe10fd012555244dc1dfa663f1618b7277c5419e4bd"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "size": 5056,
+      "sha256": "201e3925908cf8a9bea0caa138c53a5ec38cef2d2e3cd40d15bc54a85213fdca"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "licenses/LGPL-3.0.txt",
+      "size": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "licenses/ZSTD-BSD-3-Clause.txt",
+      "size": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "NOTICE",
+      "size": 1304,
+      "sha256": "293687aebcc55dd5904a200e7200741b338940cbc7b25183f333fa3aa75eb239"
+    },
+    {
+      "path": "README.md",
+      "size": 2538,
+      "sha256": "bb0d5c3a4c3d3a1b316f4c1d7b6cd9e63f805b4dfe272d451136bd7fc9d4edc3"
+    },
+    {
+      "path": "root/backend/action_semantics.py",
+      "size": 6111,
+      "sha256": "aa965843b314a2da6e6498aa1097e1c64b46ca68963638821fdd0e8e1a3f05dd"
+    },
+    {
+      "path": "root/backend/action_state.py",
+      "size": 4809,
+      "sha256": "5ea36e209f0e9309373e9f562042ffe84efcd7e5cd1b64c8a543813651f14a46"
+    },
+    {
+      "path": "root/backend/app.js",
+      "size": 32524,
+      "sha256": "0cfecac92f085e89924e19fb3a3f8bfbc37f2250154dd72d0af813ea60f1167c"
+    },
+    {
+      "path": "root/backend/buffered_log.py",
+      "size": 2485,
+      "sha256": "8761c8f1acac5d417edff76a38ba45840a3c5d60e9a65055c94f174f7a2b6a62"
+    },
+    {
+      "path": "root/backend/camera.py",
+      "size": 3547,
+      "sha256": "1a0163fbc9dafb37aaed1d6669e8a0dcf4638066f1e23ea662cb487f06648a9d"
+    },
+    {
+      "path": "root/backend/camera_context.py",
+      "size": 7202,
+      "sha256": "ee3ac2368d23dd64389bb801691a219762b9b69209c73fed5d94163c627a620f"
+    },
+    {
+      "path": "root/backend/camera_rules.py",
+      "size": 6107,
+      "sha256": "b0bad796391852649c8d3cfb05e6ae4adfe291246e82b96828f490fcb2f99848"
+    },
+    {
+      "path": "root/backend/esp.css",
+      "size": 2413,
+      "sha256": "0c918661cfe5fa55fd089f4bd4cdd2265933977e1ae9f10df9d1628a8ad72cc5"
+    },
+    {
+      "path": "root/backend/esp.html",
+      "size": 4636,
+      "sha256": "b6609cb6a56033ba283aa61200857724bebd92c67c23ff0c8e32f0dbb3c076b9"
+    },
+    {
+      "path": "root/backend/esp.js",
+      "size": 12549,
+      "sha256": "640989acc697ec897abf9497d6e8c3a7e0df88bfdfa2ad206ff67d62a3868dba"
+    },
+    {
+      "path": "root/backend/identity.py",
+      "size": 4316,
+      "sha256": "623e0afb1fb9081dbbcda71bae79ad97eba147cb98317851d2da98d1589343eb"
+    },
+    {
+      "path": "root/backend/index.html",
+      "size": 9550,
+      "sha256": "32a543a205399d478655ae5edf93059bed0d174f1cd213d7bd0b29dcdd73b6dc"
+    },
+    {
+      "path": "root/backend/projection.js",
+      "size": 7962,
+      "sha256": "856680d58cc25fb2a7807fd72463130ba2344aa8ec1b76f2bff2375ae5534d65"
+    },
+    {
+      "path": "root/backend/protocol.py",
+      "size": 24503,
+      "sha256": "5065a2078aaaf6dd34f78acfbe41b2cf16a9a4b6b40dae24e758d9c895e8be7b"
+    },
+    {
+      "path": "root/backend/runner.sh",
+      "size": 6301,
+      "sha256": "a10f937e2f5cb13bdf6b60576915accff728fe428cfc8fbd8e60262091831159"
+    },
+    {
+      "path": "root/backend/server.py",
+      "size": 29893,
+      "sha256": "daa79b73b5dd710f82d6111b528a222b0c4bebd804622dd194a80b1adbc426d1"
+    },
+    {
+      "path": "root/backend/start.sh",
+      "size": 3118,
+      "sha256": "a27cd38293fb73636dae77b7d1dd3a9c8579ad4996b54f2954bba4e1f1116d4e"
+    },
+    {
+      "path": "root/backend/stop.sh",
+      "size": 1797,
+      "sha256": "3955235a7e18805c7d7fb9722905e4da96438338e9c01e857b036f28893b9fcd"
+    },
+    {
+      "path": "root/backend/style.css",
+      "size": 13824,
+      "sha256": "a8eb18e24acc6c5843e218745ac30d5dd3efa355586ca6e1bda7d75165d30093"
+    },
+    {
+      "path": "root/overlay/AndroidManifest.xml",
+      "size": 1593,
+      "sha256": "e81c9121509ac1625a8c60a2df2582d9f7c4491b95102b2c249d87bebdcab293"
+    },
+    {
+      "path": "root/overlay/java/local/udp/esp/MainActivity.java",
+      "size": 3448,
+      "sha256": "0bf9cac78663e1ef708c837045a5bc8e2408a64a1ddd83cb605906066cf11728"
+    },
+    {
+      "path": "root/overlay/java/local/udp/esp/OverlayConfig.java",
+      "size": 475,
+      "sha256": "6d2a517c91be46f792f4409c2f5622532cc6c40804e35a97e23866b37b9e99cb"
+    },
+    {
+      "path": "root/overlay/java/local/udp/esp/OverlayService.java",
+      "size": 18065,
+      "sha256": "dca4abd2b86780c54acb54b125ba3ca6e3492182b8f8dd12c8bd0c0c7cd986a0"
+    },
+    {
+      "path": "root/overlay/java/local/udp/esp/Projection.java",
+      "size": 15171,
+      "sha256": "5af10c3e6af8e9cf6d5db1aaae78e38b9099f684f822d31f3901e718f9db0abc"
+    },
+    {
+      "path": "root/overlay/res/xml/network_security_config.xml",
+      "size": 280,
+      "sha256": "5054db8d6da78f4ae38f90f5be8e4a4eec14800ad20b685587e5709d0f7e7efe"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "size": 2832,
+      "sha256": "ad54b5b2736992a03ce190b72943eab3ab27de7d87068167000f7eca7df4bbde"
+    },
+    {
+      "path": "tools/build_android.py",
+      "size": 10720,
+      "sha256": "61a0b759717cdad2c21068c4f10009dd8e14328ce76eeb3662d021ee7cf739ad"
+    },
+    {
+      "path": "tools/check_release.py",
+      "size": 3764,
+      "sha256": "9fb37291813bf3fd2bd3621cd66b8a3725ed0a85ebb4fd6e7f8dc09a8796a198"
+    },
+    {
+      "path": "tools/publish_github.py",
+      "size": 3936,
+      "sha256": "35ddec5af824954fb69b828740a82b1fa8404a7c4acddeb77284906ec3cd3824"
+    },
+    {
+      "path": "tools/stage_root_backend.py",
+      "size": 1459,
+      "sha256": "3c4935f7053bfe27685770d67b02b23efcf50ba1811974ce3bf1c1b24f92a2e5"
+    },
+    {
+      "path": "validation/DEPLOY_COPY_CHECK.json",
+      "size": 165,
+      "sha256": "0c940e558a2ff072d45e4a82a3deb14c38ff130630680a6597a952df62913ab6"
+    },
+    {
+      "path": "validation/PUBLIC_BUILD.json",
+      "size": 20736,
+      "sha256": "b33236bdd5959f9698876a01e3a60bec60dd134c5295bae0852e3e149104949d"
+    },
+    {
+      "path": "validation/PUBLIC_SOURCE_CHECK.json",
+      "size": 436,
+      "sha256": "7d7ff14e42604eeab5dfb94105b84a7b0260a4da4743539074da86e1509c8253"
+    },
+    {
+      "path": "validation/PUBLICATION_CHECK.json",
+      "size": 588,
+      "sha256": "97e854bc07f6494fa202a1b3616e620d7083b7e693f35b03522778c1dd3bab6e"
+    },
+    {
+      "path": "validation/SOURCE_BASELINE.json",
+      "size": 26433,
+      "sha256": "a3f2ddc315d1008c4c189acea90f810ad1eb90412aa399a2cb692545564cb720"
+    },
+    {
+      "path": "validation/STATUS.json",
+      "size": 2143,
+      "sha256": "8f1aacf6e6d7bad7cecd781f8366669233a021daa072ebe80a301b0946202b63"
+    },
+    {
+      "path": "validation/WINDOWS_BUILD.json",
+      "size": 20534,
+      "sha256": "262feb78e7f20c1b8968dcf7f2a2dbec4b2328a3224a91047370f30bdae2536a"
+    },
+    {
+      "path": "vpn/AndroidManifest.xml",
+      "size": 2105,
+      "sha256": "4b94b423b86e818c977c5654e353dfeb14d5b2ddc8b0335f52f884e219e28f9c"
+    },
+    {
+      "path": "vpn/dependency-sources.json",
+      "size": 508,
+      "sha256": "d6af01b5278fa812d8b1d1e82549abb0e3133da958c1d7811225b10fe07e5999"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/GameDecoder.java",
+      "size": 16202,
+      "sha256": "f820260abbd125373a4e99810441ee4254816b263cade4582ad2667eccc4c2fa"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/GameState.java",
+      "size": 10958,
+      "sha256": "fa2c8320dd2d8efb10475cc7970442f09d87bcc17f75cfbd4c995df20aef43eb"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/GameVpnService.java",
+      "size": 10072,
+      "sha256": "35c495212ce14fd654350012c1d471239cb6d5e37c9ddba1e381ed5a39c17da0"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/LiveRuntime.java",
+      "size": 366,
+      "sha256": "aad014c387470eb79c822c534bafd64d81658a20fc1c1f2ddc88ad1dd508452b"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/MainActivity.java",
+      "size": 3378,
+      "sha256": "f208046d72cf5b05a03c4d015e705db8a37194e15dd6ee03c460683fd414fd2c"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/OverlayConfig.java",
+      "size": 479,
+      "sha256": "f31ddb54f59047c5e77a6e2e305314460e597d7272893e3543fe6c28bd90ab8d"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/OverlayService.java",
+      "size": 15401,
+      "sha256": "350129350ec712abc5b9633a9efacc6cdcf4c53b54cf9486503eabce7c71e8b9"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/Projection.java",
+      "size": 15170,
+      "sha256": "70a1725aa4565446bb577845a8cf8aa73dce99031aa388a89354b9ce3d75a20b"
+    },
+    {
+      "path": "vpn/java/local/udp/esp/vpn/VpnNative.java",
+      "size": 371,
+      "sha256": "563840d25d3bdeac980067bb67b3b9cb0676808cfa87cfae79b4a279ea42d19e"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/.github/workflows/tests.yml",
+      "size": 209,
+      "sha256": "14cfd3f8747ad124aaf24f24cfeaf1d7568754da7dd9ad5d4092e86d13303276"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/.gitignore",
+      "size": 14,
+      "sha256": "d2f7e08f3a665b91501ed4bd5324995de3ff8afbf6a44df3c568b4ebfb2b3bc4"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/CMakeLists.txt",
+      "size": 1696,
+      "sha256": "513d124d29bbf9f342a38f4e8d442256bffbc23409bfbaa62ab75cb82d11b600"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/COPYING",
+      "size": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/README.md",
+      "size": 4249,
+      "sha256": "53da04417ae5629075bff7f2251aa65507f664c2bf6971bade7a6e8bc8ed689f"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/socks5.c",
+      "size": 6860,
+      "sha256": "bb2e7f57c1b70f7e530d19cdd1759bfd172d8ee6efb1e051398398d18d9529c7"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/socks5.h",
+      "size": 1450,
+      "sha256": "86f87aebeae9c6758d4c2c5fb21765e3f413ab969f992376b252544576309484"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/tests/CMakeLists.txt",
+      "size": 4286,
+      "sha256": "188f87ebad66d5e0b9d252dbf2938b689acc0ed2481f16f769fcba235f740439"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/tests/Makefile",
+      "size": 265,
+      "sha256": "fd2f5f3b84589d6368b5bbc3904c0f57945ce9c8f18794a4bb3e3914d0c95be7"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/tests/stack.c",
+      "size": 45655,
+      "sha256": "821f537255865b56810f6685ff90e2aa3499574f620ca094ba0e10e202575eaa"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/tests/tcp_close.c",
+      "size": 35184,
+      "sha256": "708e719f342fdf4ebd62829fea84eb21c4a1d72769c58a05473d6b79b80a9209"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/tests/test_utils.c",
+      "size": 9079,
+      "sha256": "2a8f0aaf14fddb19ccd2ee36aa6d3764378fd2ff059a3633f9590f67f65afbd9"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/tests/test_utils.h",
+      "size": 3163,
+      "sha256": "7d3e0a38f718c1a593b5c0374ec827b63577172c95451f70a1b892912bc9be39"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/third_party/net_headers.h",
+      "size": 2769,
+      "sha256": "941e8f24182e735aadaf197d6171179b98fe9f74345617efe0f5210d8a4a71e6"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/third_party/uthash.h",
+      "size": 73853,
+      "sha256": "a18268af4e5a2153b1f8a3bbba5732133c212eb49b17c3dc622c176ce6c7e53f"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/utils.c",
+      "size": 8854,
+      "sha256": "56c9cc1564f536396644cea778d956eb25c1c059dcad42280a5f727ec5f480fc"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/utils.h",
+      "size": 1874,
+      "sha256": "9e92f1be1a0a5514abce43236a53f045319ec59132832e76e62fafa64d0a3284"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/zdtun.c",
+      "size": 67967,
+      "sha256": "17d9bc6322b3b506122e27e4414f948a29957355810d7f8eee8353bda464d876"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/zdtun.h",
+      "size": 15296,
+      "sha256": "cb1d918a90ff4499b371d53958268f9b4e1136f7e29831c7ee1a66b5d35f9a15"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/zdtun_client.c",
+      "size": 4291,
+      "sha256": "65d5dd798e83fae6323d549b875dd44412fe9ced11268d312f23fa030fe90641"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/zdtun_gateway.c",
+      "size": 9695,
+      "sha256": "ec80d029dec343331d9deba7598d6b20f1f46a49c67113427333a5d2e93cfc40"
+    },
+    {
+      "path": "vpn/native/third_party/zdtun/zdtun_pivot.c",
+      "size": 6507,
+      "sha256": "1588cab2769a332208ad72ba4168b6ef86d0efb34b9b451b1508cf9792686c48"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/COPYING",
+      "size": 18091,
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/.gitignore",
+      "size": 48,
+      "sha256": "d87b60fa535d8a097547b917bce231ee9cb1fa389bf05759b6fca4a61e7b2a3e"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/BUCK",
+      "size": 4480,
+      "sha256": "6629e51f4a8ea262df547b179b967068523bb13f75b6415458517328f5c1cbb9"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/allocations.h",
+      "size": 1637,
+      "sha256": "6a718e8edaca112abdc0bdfa7de67edefaa44c8d9e514b79672ab58ab3a9118a"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/bits.h",
+      "size": 5956,
+      "sha256": "5bb7693a35d7ce03f8715c0b1e237062285e052250fdd34f72f38e7e92365090"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/bitstream.h",
+      "size": 18727,
+      "sha256": "a9461685c9add6f609078acc950a08db4c02e6e6a849d550f45182ba2ae38556"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/compiler.h",
+      "size": 16644,
+      "sha256": "d19829705d8039437ffba873df2b58d20d7b876d58da479121d2e515df55cbf7"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/cpu.h",
+      "size": 5438,
+      "sha256": "23d520b536a6f23114e66549d03a967b1f24b15560c5b1ebd47ee392ccee4a1c"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/debug.c",
+      "size": 1091,
+      "sha256": "7ab1ea104acf3243fc1cd4e6d2514046f1dfc1101c7c676145c8da080e8c24ca"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/debug.h",
+      "size": 3925,
+      "sha256": "8260cd5087b8309679c61b772b535688993c61a675a30481b8ae55b45740ba15"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/entropy_common.c",
+      "size": 13308,
+      "sha256": "7dfce29c6bc807645b1f0c373dad94bbb49603b175a84e72d1739bf9df65feb8"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/error_private.c",
+      "size": 3905,
+      "sha256": "3f5873b2626ca1cdf554b7ec7b04ea0ef296fd0f6882d7fad42448b7e2dbb41c"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/error_private.h",
+      "size": 6438,
+      "sha256": "ae077bb433eb150ee247410a0357f910b9c07be839c6a9abe0b2e6b18ceb716d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/fse.h",
+      "size": 30033,
+      "sha256": "5235ce1e512bf80204d013b1f4cecd776fdaa9effddb48308bce08f6d0b84499"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/fse_decompress.c",
+      "size": 12478,
+      "sha256": "84eba7030a036b36363a5108e760428ce549f1a833bec6464dc755f6ed51a6fb"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/huf.h",
+      "size": 14119,
+      "sha256": "9a83d899c8c9bf03389d482562090ec2443bc0f87f27864a2b891b180333f2d4"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/mem.h",
+      "size": 12939,
+      "sha256": "4dd5fe76fa30a020cd4b3af3134ae143920300a1fe54baac1a5da73297e66783"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/pool.c",
+      "size": 11782,
+      "sha256": "9431e26cf7ca46ffb878f17df31198046664d592ae208dfbe3715e82b87af79d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/pool.h",
+      "size": 2569,
+      "sha256": "bca19a2408e85f31bad3a13f205de92ac26ecda0c5af96fdd7f213ce03d9fc78"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/portability_macros.h",
+      "size": 4916,
+      "sha256": "75e2b43968b70decc6bd17876833be04894035594ddc1e745cd6b70be8265637"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/threading.c",
+      "size": 4886,
+      "sha256": "50448323b46a8e1bde042ee88ec44fcfc646f3d4aeba8a06be54d26a710ed78d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/threading.h",
+      "size": 5112,
+      "sha256": "9ca63027ea64046acacccbe056a414d37ea7ea428ce299fe08abe53c204c5c65"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/xxhash.c",
+      "size": 607,
+      "sha256": "8444d064922f434b67b708a987981aa21dfeece735b48c82d31f7027d0ccef03"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/xxhash.h",
+      "size": 262488,
+      "sha256": "8cb837b21a8fe9a6b9dbcd0961ab16e733bfcbfa9e003f3a496ce07ae80aa8ee"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/zstd_common.c",
+      "size": 1683,
+      "sha256": "f49eb8023a90d3de925373bd9ee0d36ed46b26c529840b64220397446cd73795"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/zstd_deps.h",
+      "size": 3010,
+      "sha256": "9c77ea7d0afa8d5c868a7839e178a446a82d88eb75fd56f2fd7d9d96c5ab7c11"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/zstd_internal.h",
+      "size": 10911,
+      "sha256": "ad3d95ce2b81a8c5c6b00cfe6323d8e80cacb690d3b5883725cd0d939f4f576f"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/common/zstd_trace.h",
+      "size": 4562,
+      "sha256": "17f6daa4c7e97055cd1ed7bcf4d9241a4e79b465f083c5d732fda1df2f0be11e"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/clevels.h",
+      "size": 6860,
+      "sha256": "d764daa89b7a636d26fe96ff3536c5075e9867fb5dddbf8c9d57023a8ff4a155"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/fse_compress.c",
+      "size": 24103,
+      "sha256": "5070807a489757b87c1e1f50332b099e8ffe22971228218111eef64d3321ae82"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/hist.c",
+      "size": 7650,
+      "sha256": "1a613082642b9cabdeecd3b5929f7230cbb2f8344a28f5010f3aec12cb647ab8"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/hist.h",
+      "size": 3754,
+      "sha256": "9e3363e69d5fa35c1f6e8d2970c6c2453c06fd8a8ab3cc516a14c77d07cdea35"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/huf_compress.c",
+      "size": 58546,
+      "sha256": "0be78471f5175e49bbacb898d8b107bb8f7e13adc84780e0625be5861f016086"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress.c",
+      "size": 345541,
+      "sha256": "10c315ae609d49b2fc431521aa95908086e69fd917991c5ed9a875af3d1208e8"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress_internal.h",
+      "size": 68505,
+      "sha256": "ab7754413cef565da559bda7eb738bc2b3708c48877cb9ec37aff767d32c57d1"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress_literals.c",
+      "size": 9155,
+      "sha256": "a8f25f1bd4c0d2d9dda3355d2103c9dfbd0b7056bfd373e29e923662bfea5596"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress_literals.h",
+      "size": 1613,
+      "sha256": "02270cd6bc060279217861776a53adb67f8d7e54f47f59d2a4ddcef2e705fe2d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress_sequences.c",
+      "size": 20004,
+      "sha256": "3f4334c19ed770c4007bc12df4098026d4eb1a6fbebfbf36df58054e7babc3e9"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress_sequences.h",
+      "size": 2224,
+      "sha256": "361d108d7d452ed26f0ae4b39964f8e62166ed91d03347a5229e5d228734efc8"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress_superblock.c",
+      "size": 34085,
+      "sha256": "dd62ed79ee1feec78b2e5bfc63417ccbdcda426f4220d112b0fcd8a9d0c7e667"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_compress_superblock.h",
+      "size": 1168,
+      "sha256": "6b097999ea1d91776ca5a12e5ee02c1ed15edfcd31ba07b9ada94b0955195677"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_cwksp.h",
+      "size": 28892,
+      "sha256": "ed77c2739b18b9800b97785262526a1dd4f385311ca5c2caa20b6f2a35f3735d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_double_fast.c",
+      "size": 35303,
+      "sha256": "9f6d003c2fe1208737bec685910324220424ba47d0323fa30d9d5f53c50e91da"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_double_fast.h",
+      "size": 1767,
+      "sha256": "d9c29c9c004f572532265e12af78d5949c0908f4ef0bb0158977bcf80e1cf92b"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_fast.c",
+      "size": 38104,
+      "sha256": "8037320f321836652e73ab6cbf7b8f1f4c97cef38835ac6b4aaf0af716aa398d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_fast.h",
+      "size": 1178,
+      "sha256": "dffdf43fae7ee10a2acc04e6a5eaaf03f7d3572898117a06c330d647eed5591d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_lazy.c",
+      "size": 102821,
+      "sha256": "dd6ccf357165dc8cb574ea56a34ff1db57b7b31728b32103d0c6b72319fd45b1"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_lazy.h",
+      "size": 9684,
+      "sha256": "6f13007fbd6824058a73b097960446defe265e33b22c7c6dc2304dcf53998bbf"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_ldm.c",
+      "size": 29313,
+      "sha256": "4a2bef3612ae4a9e15a78a55541a152091fa8ba160410db24d495bd6dd57249e"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_ldm.h",
+      "size": 4365,
+      "sha256": "bd0cb86041d3a72fd7846e141a41aadae229c8e331a2117df7f6b70a1b4cb08c"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_ldm_geartab.h",
+      "size": 6077,
+      "sha256": "7285ac8ba1f0fa57a8cd8158bd427ded4e70e32a58e73b57c420b83a76e5e6e3"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_opt.c",
+      "size": 72006,
+      "sha256": "625936ee3fb02d789abb894c1fbc2918ee47582434094c963b630da13532c876"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_opt.h",
+      "size": 3046,
+      "sha256": "9b677efbae28909034d3c24f37dc5c4295d267cf477bf04e14653579f90d8b6e"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_preSplit.c",
+      "size": 8729,
+      "sha256": "8d7da15de31318ebb7dfe2f2e2c79f05b0d0563dcb92d4525814d05a279d0d64"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstd_preSplit.h",
+      "size": 1175,
+      "sha256": "910facb2e3442e42a6952c514223c4502d95ed957bf7dc73982b3b03785b361b"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstdmt_compress.c",
+      "size": 84098,
+      "sha256": "c83db699b4041bf4db89c5558db490dd295635f1eeefd60b643fbc862bbac7b5"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/compress/zstdmt_compress.h",
+      "size": 4574,
+      "sha256": "033fb25d96b4295c3d0158edf4d1bd4067f42aac39427706754e6c034b20f80f"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/huf_decompress.c",
+      "size": 76910,
+      "sha256": "710a88d877d5dc5c83a4f839392996f337ec81cf38006c4a5be6042de5b54828"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/huf_decompress_amd64.S",
+      "size": 15150,
+      "sha256": "7fe53316261517a8f877b793f3bfba8305a3f9ff05c5947f1d709aaff346f1dc"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/zstd_ddict.c",
+      "size": 9182,
+      "sha256": "38bf812283d61f4cd1f6aea30f84b43317418257c4e6fc198b09b436bd484397"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/zstd_ddict.h",
+      "size": 1319,
+      "sha256": "a97a250fd2f956e3ae419ddde68ae1f9fe4025bc0373254058d31bbd352fa71c"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/zstd_decompress.c",
+      "size": 102400,
+      "sha256": "029580818b7e9cd38d9d07c63516b00ceaa943ffcfbd099fc5ccbe3628fa362f"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/zstd_decompress_block.c",
+      "size": 101467,
+      "sha256": "9cb8bcb07aeb87e4717a9c8a86d20832dc525dde2c1b72efdaaab7c937f43b87"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/zstd_decompress_block.h",
+      "size": 2682,
+      "sha256": "62ee0c6ae3f7353020538397f436b59743da8acb922068841b346f480f7078ac"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/decompress/zstd_decompress_internal.h",
+      "size": 9683,
+      "sha256": "73217b49a644c0fcf567b70677cae31449ba9f50a235ef3b681001c3f36dc56d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/deprecated/zbuff.h",
+      "size": 11501,
+      "sha256": "fcd83d7f05dc7bc6e52da6200878e05d7dc4906cf2ccfa70ce4c753e1fdc2422"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/deprecated/zbuff_common.c",
+      "size": 1008,
+      "sha256": "9c2f0f5debd0632ea52d8776eff332227a90396bfec079159b3c29340e018215"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/deprecated/zbuff_compress.c",
+      "size": 6770,
+      "sha256": "b31a0a39d6546639b1d3e68c28632d0dd2651c2a7dba34a5a522cc6def43a842"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/deprecated/zbuff_decompress.c",
+      "size": 2082,
+      "sha256": "d567f0df10c98c6751accc2d71338437e77682b1492aab6e8e4ed09d75df572c"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dictBuilder/cover.c",
+      "size": 44541,
+      "sha256": "2419631b20b0f4867d0f3c178fc4a3006d05f58e8ce3ce6657133f85ed40d683"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dictBuilder/cover.h",
+      "size": 4828,
+      "sha256": "6e2906e7e5c486a5b7f479f60210ff67d068b2c58744ad6a936ba5a9f4a23755"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dictBuilder/divsufsort.c",
+      "size": 54649,
+      "sha256": "2081acb08865f623857d2c0dcb0e79fce9489f01416528c30cfee7097915c616"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dictBuilder/divsufsort.h",
+      "size": 2295,
+      "sha256": "14c16c2f67019875a2ea6cd07a4e803adfadce448e0b80351c51e5f910230d38"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dictBuilder/fastcover.c",
+      "size": 28575,
+      "sha256": "0b8b511e6370e89cb257d1a4b4d8e77add5537ffb999cfe5e7e59e454c93f38f"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dictBuilder/zdict.c",
+      "size": 44432,
+      "sha256": "dbe57910c9d446bbf2195f31bdba5cffef2c80b93c0325e9df8c9ffa744b0aa3"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dll/example/build_package.bat",
+      "size": 784,
+      "sha256": "34509ff536dd9303475f8a1de32bab856f67d0ab9c48eefc939bc8b672c88221"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dll/example/fullbench-dll.sln",
+      "size": 1269,
+      "sha256": "af0c9152e1109cea3e7a997e59dc435f032526c238e95681741e2a2f12ad0a74"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dll/example/fullbench-dll.vcxproj",
+      "size": 10105,
+      "sha256": "4f932405a188a42bf7d8d525d72f62c24e0145092fab1f313331e1c637572d6f"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dll/example/Makefile",
+      "size": 1473,
+      "sha256": "e148160ca8dc220f5c6037f042380ef2eebee516497e23673289c87e2c96e264"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/dll/example/README.md",
+      "size": 2956,
+      "sha256": "48a9e1287c1c0921909b6306e96abd1a5d733b4a53fc1c3e346d05701cedff33"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_legacy.h",
+      "size": 15026,
+      "sha256": "90ecc3816d28da0e0537c610fe99209fb9603b1ecdb764bd1228a5226f5c7484"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v01.c",
+      "size": 69547,
+      "sha256": "8f439ec4d83f13caaa4ee86d8de74660a38cade89b48bedf3943a9315b98e167"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v01.h",
+      "size": 3815,
+      "sha256": "51e06e92b87abe35f617d9e65c6f26b4b1b50485cda6bf34f5b23bb6e1727b13"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v02.c",
+      "size": 125199,
+      "sha256": "ffedd2b0e4dae744b8592656050f2c56eb4c8ccad1795fb3efeceb7924808712"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v02.h",
+      "size": 3724,
+      "sha256": "341dd36148b7080eae742bb21196740482c4d94a97024f47ad1e7c0f2bb20e6b"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v03.c",
+      "size": 111309,
+      "sha256": "1d69626197b9c76d28012b78fc66bcc3077bf8d796ff6f82457666d3271e7f3d"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v03.h",
+      "size": 3736,
+      "sha256": "e9d7ccc971055129a14e3b81f0e9494a638e3d9c0b4b36413252d6b3adc90cf2"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v04.c",
+      "size": 132468,
+      "sha256": "a80d9591ff3fc387a05e8e075713af9ad34596dc5c8681666346a716013a6e14"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v04.h",
+      "size": 6454,
+      "sha256": "c8c31b9db45c1b559688738f280331a5f3bce5b275cf4c71e8a41282f406134e"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v05.c",
+      "size": 153712,
+      "sha256": "62170472e18505b3347e563cdb1eba439312bb53385663730ac58cd92f3c4678"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v05.h",
+      "size": 7552,
+      "sha256": "6fb3be7f31544cee69cfb421d5bc6e34e72f4e2612b38cb38d47032a8531acdf"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v06.c",
+      "size": 163487,
+      "sha256": "d2cadc9e2906fe50e9c9564bdcb291582532060fdcec9c4bc5f0ee4370182b75"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v06.h",
+      "size": 8090,
+      "sha256": "138728fdc9de7ebd5c7ffdf471b8b324cafa8e0ab638c6f4d9c048296cfe23ab"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v07.c",
+      "size": 182177,
+      "sha256": "ae9f3c0a440b0f61d0ce44b06ee7ed3d256e10f3cb7dbbd9834d6c13625ac944"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/legacy/zstd_v07.h",
+      "size": 8733,
+      "sha256": "b682d3dffc64564fdf6f19d67baece362a1b7075c0140a80ce54e17f79961b49"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/libzstd.mk",
+      "size": 8730,
+      "sha256": "d4dd36a428b41793f565c4f4754bc31c9085506d95f50ea3e93ef9688b7b5868"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/libzstd.pc.in",
+      "size": 479,
+      "sha256": "fda15eeb137a13714a64cfc517fc50e6e0dea9e5c965cfcde993055b2611c95e"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/Makefile",
+      "size": 12104,
+      "sha256": "ce4a4c445f3a4a11d5f509567d0ebbd3dec393dc272adf36c7892e7cbd3ccdf6"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/module.modulemap",
+      "size": 887,
+      "sha256": "9057c3276d68fbbef0c140ec3f5431222fb5f450b0608c09fb2756c7e99f59f4"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/README.md",
+      "size": 12909,
+      "sha256": "070e59959b0e108c52c6596990f3544edec0fee007d020ae9a1a3c58b9d09cec"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/zdict.h",
+      "size": 26516,
+      "sha256": "abacadb94e3f79e591f4b1648e839b0160fbf4291211fd01bdba1380269b245c"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/zstd.h",
+      "size": 181748,
+      "sha256": "9b4bc8245565c98ccfc61c07749928b57e7c0f6fddb0530c4f6aa1971893d88b"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/lib/zstd_errors.h",
+      "size": 4278,
+      "sha256": "66a8c3f71d12ea6e797e4f622f31f3f8f81c41b36f48cad4f5de7d8bfb6aac0a"
+    },
+    {
+      "path": "vpn/native/third_party/zstd/LICENSE",
+      "size": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "vpn/native/vpn_bridge.c",
+      "size": 6965,
+      "sha256": "aa5d8d0fdef3ca733d7b50c983b014b2d227cf147704e78f8dd5567e990e7dff"
+    },
+    {
+      "path": "vpn/res/values/strings.xml",
+      "size": 73,
+      "sha256": "a4be9ab7c85e8943cb1cc74817022eaca7991f21f5b3fb3e7163af954f6492ed"
+    },
+    {
+      "path": "vpn/THIRD_PARTY.md",
+      "size": 910,
+      "sha256": "ba97981b57a27221c0c63e210ab41ad3b939b7dcb170c8fbb2ba923b20d54070"
+    }
+  ]
+}

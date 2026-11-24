@@ -1,0 +1,22 @@
+UDP ESP — ROOT r4 / local VPN r1
+
+Project-owned source code is distributed under the GNU General Public License,
+version 3 or (at your option) any later version (SPDX: GPL-3.0-or-later).
+See LICENSE for the full license text. No warranty is provided.
+
+Vendored dependencies retain their own copyright and license terms:
+- zdtun: Copyright Emanuele Faranda, LGPL-3.0-or-later.
+- Zstandard v1.5.7: Copyright Meta Platforms, Inc. and affiliates;
+  this project elects the BSD-3-Clause option of its dual license.
+- uthash and other bundled headers retain the notices in their source files.
+See THIRD_PARTY.md and the files under vpn/native/third_party and licenses.
+
+The game name, package name and protocol identifiers identify the interoperability
+target. Game code, assets, APKs, user captures, identity logs and private signing
+keys are not part of the source repository. There is no affiliation with the game
+publisher. Original game resources are not relicensed by this project.
+
+The ROOT r4 user confirmation applies to the historical build and tested device.
+VPN r1 has build and offline decoder comparison evidence only; forwarding and
+Android JNI runtime validation remain pending. Source-release rebuilds use a new
+local development signature unless the builder supplies their own signing key.

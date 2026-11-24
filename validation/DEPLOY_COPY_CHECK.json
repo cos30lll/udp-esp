@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "files_match_backend_sources": true,
+  "started": false,
+  "scope": "copy to a new isolated empty directory only; no runtime validation"
+}

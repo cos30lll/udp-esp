@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a1018">
+<title>超自然 · UDP 雷达</title>
+<link rel="stylesheet" href="/style.css?v=ui23camera1">
+<script defer src="/app.js?v=ui23camera1"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-icon" aria-hidden="true">◎</span><div><h1>超自然 <span>UDP RADAR</span></h1><p>UI 2.3 · 视角接入候选</p></div></div>
+  <div class="actions"><span id="health" class="badge warn" role="status">等待后端</span><a href="/esp" class="secondary">屏幕投影候选</a><button id="copyReport" class="secondary">复制诊断</button><button id="fullscreen" class="ghost">全屏</button></div>
+</header>
+<main>
+  <div class="session"><p id="status">正在连接本机后端…</p><span id="backendVersion" class="mono">/api/state</span></div>
+  <section class="stats" aria-label="运行概览">
+    <article><span>有效实体</span><strong id="liveCount">—</strong><small id="entityCaption">等待坐标</small></article>
+    <article><span>本地身份</span><strong id="ownName" class="name-value">未识别</strong><small id="ownHint">等待进场初始化</small></article>
+    <article><span>已处理包数</span><strong id="packetCount" class="mono">—</strong><small id="frameCount">场景帧 —</small></article>
+    <article><span>最后坐标</span><strong id="positionAge" class="mono">—</strong><small id="captureHint">等待连接</small></article>
+  </section>
+  <nav class="tabs" role="tablist" aria-label="工作区">
+    <button id="tab-radar" class="tab active" data-panel="radar" role="tab" aria-selected="true" aria-controls="panel-radar">雷达视图</button>
+    <button id="tab-entities" class="tab" data-panel="entities" role="tab" aria-selected="false" aria-controls="panel-entities" tabindex="-1">实体列表 <span id="listCount" class="count">0</span></button>
+    <button id="tab-diagnostics" class="tab" data-panel="diagnostics" role="tab" aria-selected="false" aria-controls="panel-diagnostics" tabindex="-1">运行诊断</button>
+  </nav>
+  <section id="panel-radar" role="tabpanel" aria-labelledby="tab-radar">
+    <div class="workspace">
+      <section class="card radar-card">
+        <div class="card-head"><div><h2>实时雷达</h2><p>世界坐标 · 不推断敌我</p></div><div class="actions"><button id="homeSelf" class="secondary">回到自己</button><button id="freeze" class="secondary" aria-pressed="false">暂停画面</button></div></div>
+        <div class="filters">
+          <label>投影<select id="plane"><option value="xz">X / Z · 俯视</option><option value="xy">X / Y</option><option value="zy">Z / Y</option></select></label>
+          <label class="anchor-control">参考实体<select id="anchor"><option value="">无 · 世界坐标</option></select></label>
+          <label>类别<select id="category"><option value="4">Actor · 类别 4</option><option value="all">全部类别</option></select></label>
+        </div>
+        <div class="plot">
+          <canvas id="radar" tabindex="0" aria-label="坐标雷达，拖动平移，双指或按钮缩放，点击实体查看详情"></canvas>
+          <div class="map-header"><span id="axesLabel" class="map-tag mono">Z ↑ / X →</span><span id="mapMode" class="map-tag">等待数据</span></div>
+          <div id="emptyState" class="empty-state"><span aria-hidden="true">◎</span><strong id="emptyTitle">等待真实坐标</strong><p id="emptyText">运行原启动脚本并进入对局。这里不生成示例点。</p></div>
+          <div class="map-tools"><button id="zoomIn" aria-label="放大" title="放大">＋</button><button id="zoomOut" aria-label="缩小" title="缩小">−</button><button id="fit">适配</button></div>
+          <div id="plotinfo" class="plot-info">等待实际坐标</div>
+        </div>
+        <div class="legend"><span><i class="dot self"></i>自己</span><span><i class="dot other"></i>其他实体 · 非敌我</span><span><i class="dot stale"></i>过期坐标</span><span id="scaleLabel" class="mono">世界单位，非米</span></div>
+        <details class="settings"><summary>显示设置 <span>跟随 / 轨迹 / 坐标跨度</span></summary><div class="settings-grid">
+          <label class="toggle"><input id="autoSelf" type="checkbox" checked>自动选择自己</label>
+          <label class="toggle"><input id="follow" type="checkbox" checked>跟随参考实体</label>
+          <label class="toggle"><input id="tracks" type="checkbox" checked>显示轨迹</label>
+          <label class="toggle"><input id="labels" type="checkbox" checked>姓名 / 编号</label>
+          <label class="toggle"><input id="flip" type="checkbox">翻转纵轴</label>
+          <label class="toggle"><input id="showStale" type="checkbox" checked>显示 3～30 秒旧点</label>
+          <label class="span-control">横向跨度<input id="span" type="number" min="5" max="100000" step="5" value="160" inputmode="decimal"><small>世界单位</small></label>
+        </div></details>
+      </section>
+      <aside class="side-stack">
+        <section class="card"><div class="card-head"><h2>实体详情</h2><span id="selectionState" class="tag">未选择</span></div><div class="card-body"><h3 id="selectedName">点击图中实体</h3><p id="selectedHint">查看详情不会改变本地身份或参考实体。</p><dl id="selectedMetrics" class="kv"></dl><button id="setAnchor" class="secondary full-width" disabled>设为参考并跟随</button></div></section>
+        <section class="card" id="cameraCard"><div class="card-head"><h2>本机上报视角</h2><span id="cameraState" class="tag pending">等待上行包</span></div><div class="card-body"><div class="camera-values"><div><span>YAW</span><strong id="cameraYaw">未收到</strong></div><div><span>PITCH</span><strong id="cameraPitch">未收到</strong></div><div><span>实时 FOV</span><strong id="cameraFov">未取得</strong></div></div><p id="cameraHint">等待已确认游戏端口的上行 3/851；无默认角度。</p><dl id="cameraMetrics" class="kv"></dl><p>yaw/pitch 来自本机上报方向，非所有实体朝向；pitch 正值向下。最终渲染镜头对应关系待实机核对。FOV 实时来源尚未确认，不使用 55/66 等配置常量。</p></div></section>
+        <section class="card"><div class="card-head"><h2>测试须知</h2><span class="tag">只读界面</span></div><div class="card-body"><ul class="notes"><li>进场前启动，保留初始化消息。</li><li>3 秒未更新标旧，30 秒后隐藏。</li><li>HP 为原值，无最大血量或百分比。</li><li>暂停只冻结雷达和列表；顶部状态仍更新。</li><li>结束测试请运行「停止.sh」。</li></ul></div></section>
+      </aside>
+    </div>
+  </section>
+  <section id="panel-entities" role="tabpanel" aria-labelledby="tab-entities" hidden>
+    <div class="card"><div class="card-head list-head"><div><h2>实体列表</h2><p>点击查看详情；未知数据不猜填</p></div><label class="search-control"><span class="sr-only">搜索姓名、编号或 UID</span><input id="search" type="search" placeholder="搜索姓名 / 编号 / UID" autocomplete="off" maxlength="100"></label><label class="sort-control"><span class="sr-only">列表排序</span><select id="sort"><option value="identity">自己优先</option><option value="distance">参考距离</option><option value="freshness">最新坐标</option><option value="id">实体编号</option></select></label></div><div class="table-scroll"><table><thead><tr><th>姓名 / 实体</th><th>身份</th><th>类别</th><th>HP 原值</th><th>HP 时效</th><th>X</th><th>Y</th><th>Z</th><th>平面距离</th><th>坐标时效</th><th>UID</th></tr></thead><tbody id="rows"></tbody></table></div><p id="tableHint" class="table-hint">等待实体数据</p></div>
+  </section>
+  <section id="panel-diagnostics" role="tabpanel" aria-labelledby="tab-diagnostics" hidden>
+    <div class="diagnostic-grid"><section class="card"><div class="card-head"><h2>运行指标</h2><span id="diagnosticBadge" class="tag">未连接</span></div><div class="card-body"><dl id="metrics" class="kv"></dl></div></section><section class="card"><div class="card-head"><h2>协议观测</h2><span class="tag">真实计数</span></div><div class="card-body"><h3 class="section-label">入站应用消息</h3><pre id="messageCounts" class="count-list">未收到</pre><h3 class="section-label">场景动作</h3><pre id="actionCounts" class="count-list">未收到</pre><p>本页仅请求 /api/state，不发起抓包或游戏消息。诊断副本省略实体名单、UID 和完整坐标列表；错误文本仍可能含运行信息，分享前请检查。</p></div></section></div>
+  </section>
+  <section id="reportBox" class="card report-box" hidden><div class="card-head"><h2>诊断文本</h2><button id="closeReport" class="ghost">收起</button></div><div class="card-body"><p>如自动复制未获授权，可长按文本手动复制。</p><textarea id="reportText" readonly rows="12" aria-label="诊断文本"></textarea></div></section>
+  <p id="error" class="error-banner" role="alert" hidden></p>
+  <footer><span>被动 UDP · 无地图配准 / 朝向补偿 / 插值预测</span><span>关闭网页不会停止后台，请使用原停止脚本。</span></footer>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

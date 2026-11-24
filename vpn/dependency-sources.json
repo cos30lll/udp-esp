@@ -1,0 +1,14 @@
+[
+  {
+    "name": "zdtun",
+    "url": "https://codeload.github.com/emanuele-f/zdtun/tar.gz/refs/heads/master",
+    "archive": "下载资料/udp-esp-vpn/zdtun.tar.gz",
+    "sha256": "bbde6f3dafa9f3ca50c6843a11c660151c84b1a39d6dbeba60dc88ef5bed83e6"
+  },
+  {
+    "name": "zstd",
+    "url": "https://codeload.github.com/facebook/zstd/tar.gz/refs/tags/v1.5.7",
+    "archive": "下载资料/udp-esp-vpn/zstd-complete.tar.gz",
+    "sha256": "37d7284556b20954e56e1ca85b80226768902e2edabd3b649e9e72c0c9012ee3"
+  }
+]

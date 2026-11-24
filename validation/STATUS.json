@@ -1,0 +1,56 @@
+{
+  "root": {
+    "version": "r4",
+    "user_confirmed_local_runtime": true,
+    "user_statement": "好了完美了",
+    "apk_sha256": "daa383155fc72e67fa6db749564e165cf554d1b444458f5c0b80f4e8a5e3441a",
+    "box_bounds": "fixed standing estimate",
+    "camera": "fixed-version approximation",
+    "scope": "1.35.20.001 / gameplay 12/1201"
+  },
+  "vpn": {
+    "version": "r1",
+    "apk_sha256": "23973d5723b583721028056d269dda7a322acbd682b067b15ec00c8a45bbc293",
+    "compiled_and_signature_verified": true,
+    "java_capture_differential_passed": true,
+    "vpn_runtime_verified": true,
+    "jni_executed": null,
+    "network_forwarding_verified": true,
+    "records": 8571,
+    "scene_messages": 2036,
+    "camera_messages": 1790,
+    "identity_messages": 5,
+    "hp_actions": 11,
+    "known_rejected_checksum_records": 2,
+    "view_angle_max_error_deg": 7.105427357601002e-15,
+    "decompression_check": "real frames decompressed by host libzstd; Android JNI not executed",
+    "initial_offline_validation": {
+      "vpn_runtime_verified": false,
+      "jni_executed": false,
+      "network_forwarding_verified": false
+    },
+    "user_confirmed_local_runtime": true,
+    "runtime_feedback": {
+      "date": "2026-11-24",
+      "source": "direct_user_report",
+      "statement": "vpn实测成功了",
+      "scope": "User reports successful on-device VPN use. No separate JNI trace, device matrix, IPv6, network-switch or lifecycle test logs were supplied.",
+      "independently_reproduced_in_this_publication_session": false
+    }
+  },
+  "public_package": {
+    "raw_pcaps_included": false,
+    "identity_logs_included": false,
+    "signing_keys_included": false,
+    "game_binaries_included": false,
+    "github_uploaded": false,
+    "root_public_source_rebuild_passed": true,
+    "vpn_public_source_rebuild_passed": true,
+    "original_application_source_baseline_matches": true,
+    "runtime_tests_run_for_public_copy": false,
+    "new_signature_for_public_rebuilds": true,
+    "build_record": "validation/PUBLIC_BUILD.json",
+    "windows_source_rebuild_passed": true,
+    "windows_build_record": "validation/WINDOWS_BUILD.json"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "source_files": 191,
+  "python_syntax_files": 13,
+  "shell_syntax_files": 3,
+  "boundary_checks": {
+    "loopback_root_bind": true,
+    "immediate_capture": true,
+    "vpn_per_app": true,
+    "vpn_protect": true,
+    "hp_does_not_invent_max": true
+  },
+  "errors": [],
+  "dynamic_tests_run": false,
+  "checked_at": "2026-11-24T16:39:41.228831+08:00",
+  "scope": "Pre-publication source check; source_files counts the snapshot before writing this report. The release manifest is generated separately after metadata changes.",
+  "local_markdown_links": "passed"
+}

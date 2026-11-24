@@ -1,0 +1,46 @@
+name: Build source release
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install Android build inputs
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0' 'ndk;26.3.11579264'
+      - name: Check public sources
+        run: python3 -B tools/check_release.py
+      - name: Build root and VPN APKs
+        run: |
+          export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/26.3.11579264"
+          python3 -B tools/build_android.py all --jobs 2
+      - name: Keep APKs and build metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: udp-esp-development-builds
+          path: dist/
+          if-no-files-found: error
+      - name: Keep compiler logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-failure-logs
+          path: build/*/build.log
+          if-no-files-found: ignore
