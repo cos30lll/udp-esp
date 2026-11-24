@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/build.yml",
-      "size": 1286,
-      "sha256": "bbb2c1f5f4aa766791d047974c045284a67dfdc8544cc01fa2eaecc57c273f70"
+      "size": 1387,
+      "sha256": "389fdcf52eac594fd808dac4edfc45c3ae0b27721da611ec270318214a4ee405"
     },
     {
       "path": ".gitignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "docs/BUILD.md",
-      "size": 6557,
-      "sha256": "dacaf22edbeaacd5597552be96f946e580b4ac42766ed3214c4d12582a2f94b7"
+      "size": 6547,
+      "sha256": "129b28efd162ffb9158b0d89b2819122f1de7e5935f239c4fd56f311fca41a0d"
     },
     {
       "path": "docs/DEVELOPMENT.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "docs/PUBLISHING.md",
-      "size": 3286,
-      "sha256": "fc58d09f33d52c0448cabbe10fd012555244dc1dfa663f1618b7277c5419e4bd"
+      "size": 3412,
+      "sha256": "1774e5fcd1fc4e0d87c11620c5e18ac9cb8ce15680a395f6e97e10b6d6ab6d9f"
     },
     {
       "path": "docs/VALIDATION.md",
@@ -238,8 +238,8 @@
     },
     {
       "path": "validation/PUBLICATION_CHECK.json",
-      "size": 588,
-      "sha256": "97e854bc07f6494fa202a1b3616e620d7083b7e693f35b03522778c1dd3bab6e"
+      "size": 533,
+      "sha256": "f04f05e36677b5f35018381bf47bbf744cf2ded2bd1c66823d97a567516ad6be"
     },
     {
       "path": "validation/SOURCE_BASELINE.json",

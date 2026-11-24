@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "source_files": 191,
+  "source_files": 192,
   "python_syntax_files": 13,
   "shell_syntax_files": 3,
   "boundary_checks": {
@@ -12,7 +12,7 @@
   },
   "errors": [],
   "dynamic_tests_run": false,
-  "checked_at": "2026-11-24T16:39:41.228831+08:00",
-  "scope": "Pre-publication source check; source_files counts the snapshot before writing this report. The release manifest is generated separately after metadata changes.",
+  "checked_at": "2026-11-24T16:44:06.847772+08:00",
+  "scope": "Source snapshot checked before writing this report; release manifest regenerated after metadata changes.",
   "local_markdown_links": "passed"
 }

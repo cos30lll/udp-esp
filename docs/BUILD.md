@@ -60,7 +60,7 @@ build/signing/local-debug.p12
 
 默认生成新的本地开发密钥，开发密码为公开默认值 `android`。该密钥与历史成品签名不同；同包名覆盖安装可能因签名不匹配失败。`build/`、`dist/` 全部排除在源码包和提交之外。
 
-发行者可通过环境变量指定自己的签名：`UDP_ESP_KEYSTORE`、`UDP_ESP_KEY_ALIAS`、`UDP_ESP_STOREPASS`、`UDP_ESP_KEYPASS`。密码通过 apksigner 环境传递，工具不记录密码；不要将真实密码写进仓库、终端共享日志或 Codex 提示词。签名文件保留在发行者私有目录。
+发行者可通过环境变量指定自己的签名：`UDP_ESP_KEYSTORE`、`UDP_ESP_KEY_ALIAS`、`UDP_ESP_STOREPASS`、`UDP_ESP_KEYPASS`。密码通过 apksigner 环境传递，工具不记录密码；不要将真实密码写进仓库、终端共享日志或对话。签名文件保留在发行者私有目录。
 
 每次新构建的哈希、来源文件哈希和验签状态记录在 JSON 中；默认签名和 ZIP 元数据变化会使 APK 与历史哈希不同。历史与新构建不得混称同一个冻结成品。
 
