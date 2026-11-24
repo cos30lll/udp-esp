@@ -43,7 +43,7 @@
     "identity_logs_included": false,
     "signing_keys_included": false,
     "game_binaries_included": false,
-    "github_uploaded": false,
+    "github_uploaded": true,
     "root_public_source_rebuild_passed": true,
     "vpn_public_source_rebuild_passed": true,
     "original_application_source_baseline_matches": true,
@@ -51,6 +51,11 @@
     "new_signature_for_public_rebuilds": true,
     "build_record": "validation/PUBLIC_BUILD.json",
     "windows_source_rebuild_passed": true,
-    "windows_build_record": "validation/WINDOWS_BUILD.json"
+    "windows_build_record": "validation/WINDOWS_BUILD.json",
+    "github_repository": "https://github.com/cos30lll/udp-esp",
+    "github_branch": "main",
+    "first_verified_source_commit": "260d46ff4f69f2160464b58d612acb86fc6329d9",
+    "publication_verified_at": "2026-11-24T16:41:44.165558+08:00",
+    "publication_evidence": "Successful normal push and unauthenticated ls-remote matching first_verified_source_commit; subsequent metadata commit records this result."
   }
 }

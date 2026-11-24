@@ -248,8 +248,8 @@
     },
     {
       "path": "validation/STATUS.json",
-      "size": 2143,
-      "sha256": "8f1aacf6e6d7bad7cecd781f8366669233a021daa072ebe80a301b0946202b63"
+      "size": 2553,
+      "sha256": "dfdcf3b617e498bd02adb82f1c5d34dd110a0b8ad64d484f1f944f2f035080e3"
     },
     {
       "path": "validation/WINDOWS_BUILD.json",
