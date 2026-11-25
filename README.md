@@ -1,4 +1,4 @@
-# UDP ESP
+# UDP ESP (完全通过ecmod.zhake.win)进行许愿编程获得
 
 Android 上基于游戏 UDP 状态的屏幕叠加。显示目标姓名、距离、方框、底部射线和最近报告的 HP，提供 ROOT 与本地 VPN 两套实现。适配《超自然行动》版本 `1.35.20.001`，玩法 `12/1201`，包名 `com.pi.czrxdfirst`。
 
