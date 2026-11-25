@@ -23,28 +23,28 @@
     },
     {
       "path": "docs/BUILD.md",
-      "size": 6547,
-      "sha256": "129b28efd162ffb9158b0d89b2819122f1de7e5935f239c4fd56f311fca41a0d"
+      "size": 6199,
+      "sha256": "6ea8bebee6924a3c646d40b4341844caad685a7515281baa78566c22d7326e04"
     },
     {
       "path": "docs/DEVELOPMENT.md",
-      "size": 17710,
-      "sha256": "11a6bf7a0841974217b72d24294a5db1f59d2ba13e3282e622c3facc30a6b265"
+      "size": 17144,
+      "sha256": "f141c4c3f1969b3e52e74de59fd3b53366d02b54261dbc6917d7309cf4dbc4ca"
     },
     {
       "path": "docs/PROTOCOL.md",
-      "size": 7314,
-      "sha256": "72bf2ccbca6f32976fa64b4fb5291949a68b5565d043682a132fce8917e686b8"
+      "size": 7176,
+      "sha256": "b17b50ed44eb4e18add0e56ed9329ae0f5c9e81d8795bbdb537b2f3ff9bc1ced"
     },
     {
       "path": "docs/PUBLISHING.md",
-      "size": 3412,
-      "sha256": "1774e5fcd1fc4e0d87c11620c5e18ac9cb8ce15680a395f6e97e10b6d6ab6d9f"
+      "size": 2343,
+      "sha256": "06d9b33b507f1e5e915e6112886951c5d64e817d839b939d05eb532884fbd44b"
     },
     {
       "path": "docs/VALIDATION.md",
-      "size": 5056,
-      "sha256": "201e3925908cf8a9bea0caa138c53a5ec38cef2d2e3cd40d15bc54a85213fdca"
+      "size": 4162,
+      "sha256": "14a5d297eb8183a9ecd624f4895a3dfbb0a81d0bc323f4b4f3034cbb7ba03dbc"
     },
     {
       "path": "LICENSE",
@@ -68,8 +68,8 @@
     },
     {
       "path": "README.md",
-      "size": 2538,
-      "sha256": "bb0d5c3a4c3d3a1b316f4c1d7b6cd9e63f805b4dfe272d451136bd7fc9d4edc3"
+      "size": 2170,
+      "sha256": "75f652203b620b822bd58c2d8f2132b8e31267696c3c965510718ec79c105115"
     },
     {
       "path": "root/backend/action_semantics.py",
